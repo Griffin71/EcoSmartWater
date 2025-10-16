@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EcoSmart Water Bottle</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Header / Sticky Navbar ===== -->
+  <header class="navbar">
+    <div class="logo">EcoSmart</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== Main Section ===== -->
+  <main id="home" class="main-section">
+    <div class="product-info">
+      <h1>EcoSmart Water Bottle</h1>
+      <p>Stay hydrated, stay green. Choose sustainability with every sip!</p>
+      <button id="buyNowBtn" class="btn">Buy Now</button>
+      <p class="price-display">Total Price: <span id="price">R150</span></p>
+    </div>
+    <div class="product-image">
+      <img src="assets/bottle-placeholder.jpg" alt="EcoSmart Bottle" />
+    </div>
+  </main>
+
+  <!-- ===== Modal (Color & Options Selection) ===== -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Select Your Options</h2>
+
+      <label for="color">Color:</label>
+      <select id="color">
+        <option value="green" data-price="0">Green (default)</option>
+        <option value="blue" data-price="20">Blue (+R20)</option>
+        <option value="black" data-price="30">Black (+R30)</option>
+      </select>
+
+      <div class="extra-options">
+        <label><input type="checkbox" id="engraving" data-price="50" /> Custom Engraving (+R50)</label>
+        <label><input type="checkbox" id="premiumBox" data-price="40" /> Premium Packaging (+R40)</label>
+      </div>
+
+      <p>Updated Price: <strong id="modalPrice">R150</strong></p>
+      <button id="confirmBtn" class="btn">Confirm</button>
+    </div>
+  </div>
+
+  <!-- ===== Features Section ===== -->
+  <section id="features" class="features-section">
+    <h2>Why Choose EcoSmart?</h2>
+    <ul>
+      <li>Made from 100% recycled materials</li>
+      <li>Keeps drinks cold for 24 hours, hot for 12 hours</li>
+      <li>Leak-proof and BPA-free</li>
+      <li>Available in multiple stylish colors</li>
+    </ul>
+  </section>
+
+  <!-- ===== Pricing Section ===== -->
+  <section id="pricing" class="pricing-section">
+    <h2>Pricing</h2>
+    <p>Base Price: R150</p>
+    <p>Customize your bottle for extra options!</p>
+  </section>
+
+  <!-- ===== Footer / Contact Form ===== -->
+  <footer id="contact" class="footer-section">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Name" required />
+      <input type="email" id="email" placeholder="Email" required />
+      <textarea id="message" placeholder="Message" required></textarea>
+      <label class="terms">
+        <input type="checkbox" id="terms" required /> I agree to the Terms and Conditions
+      </label>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+    <p class="copyright">© 2025 EcoSmart Water Bottle</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
+<!--WRITTEN WITH LOVE BY GRIFFIN :) -->
